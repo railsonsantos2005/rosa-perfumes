@@ -1,0 +1,23 @@
+COMO HOSPEDAR O SITE NO GOOGLE DRIVE
+
+1. Faça login no Google Drive (com sua conta do Gmail)
+2. Crie uma nova pasta chamada "rosa-perfumes"
+3. Faça upload dos arquivos:
+   - index.html
+   - styles.css
+   - script.js
+4. Clique com o botão direito no index.html
+5. Selecione "Compartilhar"
+6. Mude o acesso para "Qualquer pessoa com o link"
+7. Copie o link compartilhado
+8. O site estará disponível nesse link
+
+OBS: O link será algo como:
+https://drive.google.com/file/d/[ID_DO_ARQUIVO]/view
+
+Para acessar o site, seus clientes precisam:
+1. Clicar no link
+2. Clicar em "Abrir com"
+3. Selecionar "Visualizador de HTML"
+
+Se precisar de ajuda, é só me avisar!
