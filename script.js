@@ -41,8 +41,27 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Adicionar todos os campos do formulário à mensagem
             formData.forEach((value, key) => {
-                message += `${key}: ${value}\n`;
+                // Traduzir os rótulos dos campos para português
+                let label = key;
+                switch(key) {
+                    case 'name':
+                        label = 'Nome do Cliente';
+                        break;
+                    case 'phone':
+                        label = 'Telefone';
+                        break;
+                    case 'product':
+                        label = 'Produto Desejado';
+                        break;
+                    case 'message':
+                        label = 'Mensagem Adicional';
+                        break;
+                }
+                message += `${label}: ${value}\n`;
             });
+
+            // Adicionar uma mensagem de agradecimento
+            message += '\nObrigado pelo seu interesse! Entraremos em contato em breve.';
 
             // Abrir WhatsApp
             openWhatsApp('86994353494', message);
