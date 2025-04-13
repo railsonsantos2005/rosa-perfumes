@@ -171,7 +171,7 @@ body::before {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
     padding: 1rem;
 }
@@ -184,35 +184,25 @@ body::before {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #eee;
-    min-height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
 }
 
 .product-card img {
     width: 100%;
+    max-width: 200px;
     height: auto;
-    object-fit: contain;
     margin-bottom: 1rem;
     border-radius: 5px;
-    max-width: 250px;
-    max-height: 250px;
-    margin: 0 auto;
-    display: block;
-    position: relative;
-    z-index: 1;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .product-card h4 {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
     color: var(--text-color);
-    text-align: center;
-    width: 100%;
-    padding: 0 1rem;
 }
 
 .product-card .price {
@@ -220,8 +210,6 @@ body::before {
     font-weight: 600;
     color: var(--accent-color);
     margin-bottom: 1rem;
-    text-align: center;
-    width: 100%;
 }
 
 .whatsapp-button-small {
@@ -244,11 +232,6 @@ body::before {
     background: #128c7e;
     transform: translateY(-2px);
     box-shadow: 0 2px 5px rgba(37, 211, 102, 0.3);
-}
-
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .whatsapp-button {
