@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rosa Perfumes - Boticário e Eudora</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/custom-form.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -69,6 +70,55 @@
         </section>
     </main>
 
+    <section class="custom-order-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pedido de Produto</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="custom-form">
+                <h3>Quer um perfume que não está disponível? Faça seu pedido!</h3>
+                <form id="custom-order-form">
+                    <div class="form-group">
+                        <label for="name">Nome Completo:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Telefone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="perfume">Nome do Perfume Desejado:</label>
+                        <input type="text" id="perfume" name="perfume" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensagem Adicional:</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">Enviar Pedido</button>
+                </form>
+                
+                <div id="success-message" class="success-message">
+                    🎉 Pedido enviado com sucesso! Entraremos em contato em breve.
+                </div>
+                
+                <div id="error-message" class="error-message">
+                    🚫 Ocorreu um erro ao enviar o pedido. Por favor, tente novamente.
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -83,5 +133,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="js/custom-form.js"></script>
 </body>
 </html>
