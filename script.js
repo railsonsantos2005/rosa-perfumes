@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 let label = key;
                 switch(key) {
                     case 'name':
-                        label = 'Nome do Cliente';
+                        label = 'Nome';
                         break;
                     case 'phone':
                         label = 'Telefone';
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         label = 'Produto Desejado';
                         break;
                     case 'message':
-                        label = 'Mensagem Adicional';
+                        label = 'Mensagem';
                         break;
                 }
                 message += `${label}: ${value}\n`;
