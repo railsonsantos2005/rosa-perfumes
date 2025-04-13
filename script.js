@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const productName = this.dataset.productName;
             const productPrice = this.dataset.productPrice;
             const message = `Olá! Gostaria de comprar o ${productName} por R$ ${productPrice}. Por favor, me envie mais informações.`;
-            openWhatsApp('86994353494', message);
+            openWhatsApp('86994353494', message); // Usando o número correto
         });
     });
 
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         specialOrderButton.addEventListener('click', function(e) {
             e.preventDefault();
             const message = 'Olá! Gostaria de saber se tem o perfume que procuro. Por favor, me informe o nome do perfume e seu contato.';
-            openWhatsApp('86994353494', message);
+            openWhatsApp('86994353494', message); // Usando o número correto
         });
     }
 
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
             // Abrir WhatsApp
-            openWhatsApp('86994353494', message);
+            openWhatsApp('86994353494', message); // Usando o número correto
             
             // Limpar formulário
             this.reset();
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
             // Abrir WhatsApp
-            openWhatsApp('86994353494', message);
+            openWhatsApp('86994353494', message); // Usando o número correto
             
             // Limpar formulário
             this.reset();
