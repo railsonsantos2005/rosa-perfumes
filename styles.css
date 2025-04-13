@@ -179,68 +179,57 @@ body::before {
 .product-card {
     background: white;
     border-radius: 10px;
-    padding: 1.5rem;
+    padding: 1rem;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #eee;
-    min-height: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border: none;
+    min-height: 250px;
 }
 
 .product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 
 .product-card img {
     width: 100%;
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
     margin: 1rem auto;
     display: block;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
-}
-
-.product-card img:hover {
-    transform: scale(1.05);
 }
 
 .product-card h4 {
-    font-size: 1.1rem;
-    margin: 1rem 0;
+    font-size: 1rem;
+    margin: 0.5rem 0;
     color: var(--text-color);
-    font-weight: 600;
-    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .price {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--accent-color);
-    font-weight: 700;
-    margin: 1rem 0;
+    font-weight: 600;
+    margin: 0.5rem 0;
 }
 
 .whatsapp-button-small {
     background: var(--secondary-color);
     color: white;
     border: none;
-    padding: 0.5rem 1.5rem;
-    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
     cursor: pointer;
     font-size: 0.9rem;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    margin-top: auto;
-    width: 100%;
-    max-width: 200px;
+    transition: all 0.3s ease;
+    margin: 0.5rem 0;
+    width: auto;
 }
 
 .whatsapp-button-small:hover {
     background: #128c7e;
-    transform: translateY(-2px);
+    transform: translateY(-1px);
 }
 
 .whatsapp-button {
