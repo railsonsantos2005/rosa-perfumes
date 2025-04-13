@@ -155,6 +155,7 @@
 
         <div class="contact-form">
             <h3>Entre em Contato</h3>
+            <p class="contact-note">Caso não tenha seu perfume favorito, faça seu pedido aqui!</p>
             <form id="contactForm">
                 <div class="form-group">
                     <input type="text" id="name" name="name" placeholder="Nome" required>
@@ -163,9 +164,12 @@
                     <input type="tel" id="phone" name="phone" placeholder="Telefone" required>
                 </div>
                 <div class="form-group">
-                    <textarea id="message" name="message" placeholder="Mensagem" required></textarea>
+                    <input type="text" id="product" name="product" placeholder="Nome do Perfume Desejado">
                 </div>
-                <button type="submit" class="submit-button">Enviar</button>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Mensagem (opcional)"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Enviar Pedido</button>
             </form>
         </div>
     </footer>
