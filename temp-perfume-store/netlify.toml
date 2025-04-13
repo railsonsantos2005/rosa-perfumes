@@ -1,0 +1,6 @@
+[build]
+  base = ""
+  publish = ""
+
+[redirects]
+  "/" = "https://rosaperfumes.netlify.app" [200]
