@@ -333,8 +333,13 @@ body::before {
 .contact-note {
     text-align: center;
     margin-bottom: 2rem;
-    color: #666;
-    font-size: 0.9rem;
+    color: #ff4500;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #fff8f0;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 2px solid #ff4500;
 }
 
 .form-group {
@@ -456,5 +461,10 @@ footer {
     .form-group input,
     .form-group textarea {
         font-size: 0.9rem;
+    }
+    
+    .contact-note {
+        font-size: 1rem;
+        padding: 0.8rem;
     }
 }
