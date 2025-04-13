@@ -402,26 +402,40 @@ body::before {
     box-shadow: 0 5px 15px rgba(204, 51, 0, 0.3);
 }
 
-/* Estilos para dispositivos móveis */
+.contact-note {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff4500, #ff8c00);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.3);
+    transform: translateY(-5px);
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-note::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff4500, #ff8c00);
+    opacity: 0.1;
+    border-radius: 10px;
+    z-index: -1;
+}
+
 @media (max-width: 768px) {
-    .contact-form {
-        margin: 1rem;
-        padding: 1.5rem;
-    }
-    
-    .contact-form h3 {
-        font-size: 1.2rem;
-    }
-    
-    .form-group input,
-    .form-group textarea {
-        font-size: 0.9rem;
-        padding: 0.8rem;
-    }
-    
-    .submit-button {
+    .contact-note {
         font-size: 1rem;
-        padding: 0.8rem;
+        padding: 1rem;
     }
 }
 
