@@ -187,17 +187,23 @@ body::before {
     min-height: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .product-card img {
     width: 100%;
-    max-width: 200px;
     height: auto;
     object-fit: contain;
     margin-bottom: 1rem;
     border-radius: 5px;
+    max-width: 250px;
+    max-height: 250px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    z-index: 1;
 }
 
 .product-card h4 {
@@ -206,6 +212,7 @@ body::before {
     color: var(--text-color);
     text-align: center;
     width: 100%;
+    padding: 0 1rem;
 }
 
 .product-card .price {
