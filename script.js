@@ -79,4 +79,36 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 1000);
         });
     }
+
+    // Formulário de Contato
+    const contactForm = document.getElementById('contactForm');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                message: document.getElementById('message').value
+            };
+            
+            // Aqui você pode adicionar a lógica para enviar os dados para seu backend
+            console.log('Formulário enviado:', formData);
+            
+            // Limpa o formulário após o envio
+            contactForm.reset();
+            
+            // Exibe mensagem de sucesso
+            const successMessage = document.createElement('div');
+            successMessage.className = 'success-message';
+            successMessage.textContent = 'Mensagem enviada com sucesso!';
+            contactForm.appendChild(successMessage);
+            
+            // Remove a mensagem após 3 segundos
+            setTimeout(() => {
+                successMessage.remove();
+            }, 3000);
+        });
+    }
 });
