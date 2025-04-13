@@ -79,4 +79,35 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 1000);
         });
     }
+
+    // Função para enviar formulário para WhatsApp
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+        if (form.id !== 'customOrderForm') {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Coletar dados do formulário
+                const formData = new FormData(this);
+                let message = 'Olá! Recebi um novo contato através do site:\n\n';
+                
+                // Adicionar todos os campos do formulário à mensagem
+                formData.forEach((value, key) => {
+                    message += `${key}: ${value}\n`;
+                });
+
+                // URL do WhatsApp com o número e mensagem
+                const whatsappUrl = `https://wa.me/5586994353494?text=${encodeURIComponent(message)}`;
+                
+                // Abrir WhatsApp
+                window.open(whatsappUrl, '_blank');
+                
+                // Limpar formulário
+                this.reset();
+                
+                // Exibir mensagem de sucesso
+                alert('Mensagem enviada com sucesso! Em breve entraremos em contato.');
+            });
+        }
+    });
 });
